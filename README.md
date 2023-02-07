@@ -1,4 +1,4 @@
-# 	The Last Counter [Responsive Website] 	
+# 	The Last Counter :registered: [Responsive Website] 	
 ![logoLC](https://user-images.githubusercontent.com/111998853/217154058-ec0001c6-9662-40fa-aa52-11f9ece5d843.png)
 
 ### :wrench:	 Tools
