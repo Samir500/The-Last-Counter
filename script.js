@@ -8,6 +8,33 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 350) {
+            $(".header").css("background", "black");
+        } else {
+            $(".header").css("background", "#00000025");
+        }
+    })
+})
+
+
+// var myIndex = 0;
+// carousel();
+
+// function carousel() {
+//     var i;
+//     var x = document.getElementsByClassName("mySlides");
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display = "none";
+//     }
+//     myIndex++;
+//     if (myIndex > x.length) { myIndex = 1 }
+//     x[myIndex - 1].style.display = "block";
+//     setTimeout(carousel, 9000);
+// }
+
 
 
 
@@ -27,7 +54,7 @@ $(document).ready(function() {
 
     });
 
-    $('.gallery').magnificPopup({
+    $('.zoom-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
         gallery: {
@@ -36,16 +63,3 @@ $(document).ready(function() {
     });
 
 });
-
-
-
-var theme = document.getElementById("theme");
-
-theme.onclick = function() {
-    document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-        theme.src = "./testingAssets/moon.png";
-    } else {
-        theme.src = "./testingAssets/sun.png";
-    }
-}
