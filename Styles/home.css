@@ -346,6 +346,8 @@ h1 {
 }
 
 .artist-member img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 10px;
     width: 200px;
     height: 500px;
     transform: scale(1.1);
@@ -357,7 +359,7 @@ h1 {
     padding: 10px;
     opacity: 0;
     width: 100%;
-    transition: all 350ms ease-in-out;
+    transition: all 600ms ease-in-out;
     z-index: 999;
 }
 
@@ -394,7 +396,7 @@ h1 {
     align-items: center;
     gap: 1rem;
     opacity: 0;
-    transition: all 350ms ease-in-out;
+    transition: all 500ms ease-in-out;
     z-index: 999;
 }
 
