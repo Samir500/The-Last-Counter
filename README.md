@@ -33,11 +33,17 @@
 
 ## Glimpses
 
-![Screenshot (137)](https://user-images.githubusercontent.com/111998853/217153248-6b900fcd-f02a-4dc6-8acc-2a4ad4063a6b.png)
+### HomePage
+![Screenshot (145)](https://user-images.githubusercontent.com/111998853/218280710-3d9cf6a1-b274-4eb9-8191-c2361f7ed0b6.png)
 
+### AboutSection
+![Screenshot (144)](https://user-images.githubusercontent.com/111998853/218280732-e1b505b8-c20e-499d-87f8-b6625ef2551c.png)
 
+### Member Section
+![Screenshot (142)](https://user-images.githubusercontent.com/111998853/218280758-2afc2c33-44b4-485a-afc6-e9d3c173c782.png)
 
-![Screenshot (138)](https://user-images.githubusercontent.com/111998853/217153296-8230653c-2fd8-4f27-9742-553db1cc86d5.png)
+### StreamingPlatform
+![Screenshot (140)](https://user-images.githubusercontent.com/111998853/218280780-81a88f61-0af8-4aea-b7b4-e66892b0b9a3.png)
 
 
 
