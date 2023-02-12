@@ -357,8 +357,8 @@ right_scroll.addEventListener('click', () => {
 })
 
 
-let left_scrolls = document.getElementById('left_scrolls');
-let right_scrolls = document.getElementById('right_scrolls');
+let left_scrolls = document.getElementById('left_scroll');
+let right_scrolls = document.getElementById('right_scroll');
 let item = document.getElementsByClassName('item')[0];
 
 left_scrolls.addEventListener('click', () => {
@@ -367,3 +367,22 @@ left_scrolls.addEventListener('click', () => {
 right_scrolls.addEventListener('click', () => {
     item.scrollLeft += 330;
 })
+
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    }
+});
