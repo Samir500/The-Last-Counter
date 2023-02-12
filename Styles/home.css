@@ -177,7 +177,7 @@ section {
 }
 
 .scroll-bg {
-    background-color: rgba(67, 67, 67, 0.756);
+    background-color: rgba(0, 0, 0, 0.682);
     padding: 0 1rem;
     border-radius: 25% 10%;
 }
@@ -481,7 +481,7 @@ h1 {
     height: auto;
     background: #ff00000c;
     background-image: url(../Assets/png/logoLC.png);
-    background-size: 40rem;
+    background-size: 30rem;
     background-repeat: no-repeat;
     background-position: top 40px right 100px;
     z-index: -999;
@@ -579,6 +579,33 @@ h1 {
     height: 300px;
     /* border: 1px solid #fff; */
     margin-top: 40px;
+    overflow: scroll;
+}
+
+.player .menu_side .menu_song::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+}
+
+
+/* Track */
+
+.player .menu_side .menu_song::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Handle */
+
+.player .menu_side .menu_song::-webkit-scrollbar-thumb {
+    background: rgba(101, 101, 101. 0.6);
+}
+
+
+/* Handle on hover */
+
+.player .menu_side .menu_song::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .player .menu_side .menu_song li {
@@ -991,14 +1018,15 @@ h1 {
     width: 180px;
     height: 150px;
     border-radius: 10%;
+    z-index: 10;
 }
 
 .player .song_side .popular_song .pop_song li .img_play .bi {
+    z-index: 999;
     position: absolute;
-    font-size: 30px;
-    cursor: pointer;
-    transition: 350s ease-in-out;
+    font-size: 32px;
     opacity: 0;
+    cursor: pointer;
 }
 
 .player .song_side .popular_song .pop_song li .img_play:hover .bi {
@@ -1009,6 +1037,11 @@ h1 {
     padding: 5px 0px 0px 5px;
     line-height: 15px;
     font-size: 18px;
+    opacity: 0;
+}
+
+.player .song_side .popular_song .pop_song li:hover h5 {
+    opacity: 1;
 }
 
 .player .song_side .popular_song .pop_song li h5 .subtitle {
@@ -1087,57 +1120,63 @@ h1 {
     background-position: center center;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
-.gallery .controls {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
+.swiper {
+    width: 600px;
+    height: 700px;
 }
 
-.gallery .controls .button {
-    height: 4rem;
-    width: 16rem;
-    background: #fff;
-    color: var(--primary-color);
-    font-size: 2rem;
-    line-height: 4rem;
-    cursor: pointer;
-    margin: 1rem;
-    box-shadow: var(--box-shadow);
-    text-align: center;
-}
-
-.gallery .controls .button.active {
-    background: var(--main-color);
-    color: #fff;
-}
-
-.gallery .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.gallery .box-container .image {
-    height: 25rem;
-    width: 40rem;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    margin: 1rem;
-}
-
-.gallery .box-container .image img {
-    height: 100%;
+.swiper {
     width: 100%;
-    object-fit: cover;
+    padding-top: 50px;
+    padding-bottom: 800px;
 }
 
-.gallery .box-container .image:hover img {
-    transform: scale(1.1);
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 500px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, transparent, #00000095);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 600px;
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: solid 10px rgb(0, 0, 0);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    text-align: right;
+    font-weight: 200;
+    font-family: 'Six Caps';
+    letter-spacing: 4px;
+}
+
+
+/* When you mouse over the container, fade in the overlay title */
+
+.swiper-slide:hover .overlay {
+    opacity: 1;
 }
 
 
@@ -1398,8 +1437,8 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .player .song_side::before {
-        opacity: 0;
+    .player .song_side {
+        background-image: no;
     }
     #menu {
         display: inline-block;
