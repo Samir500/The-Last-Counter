@@ -45,6 +45,9 @@
 ### StreamingPlatform
 ![Screenshot (140)](https://user-images.githubusercontent.com/111998853/218280780-81a88f61-0af8-4aea-b7b4-e66892b0b9a3.png)
 
+### Gallery
+![Screenshot (148)](https://user-images.githubusercontent.com/111998853/218311835-47d98bfd-9d97-4785-8503-339395114e67.png)
+
 
 
 :copyright:	
