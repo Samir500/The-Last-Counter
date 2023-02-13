@@ -333,6 +333,7 @@ h1 {
     z-index: 5;
     transform: scale(1.1);
     background-color: rgba(9, 0, 0, 0.5);
+    opacity: 0;
 }
 
 .artist-member:hover {
@@ -343,6 +344,7 @@ h1 {
 .artist-member:hover .overlay {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(255, 255, 255, 0) 55%, transparent 100%);
+    opacity: 1;
 }
 
 .artist-member img {
