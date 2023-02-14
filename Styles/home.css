@@ -53,7 +53,7 @@ section {
 
 .heading {
     font-size: 4rem;
-    margin: 4rem 0;
+    margin: 0rem 0;
     color: var(--primary-color);
     text-align: center;
 }
@@ -1188,74 +1188,191 @@ h1 {
 /* blog */
 
 .blog {
-    align-items: center;
+    /* align-items: center; */
     background: url(../Assets/jpeg/bgFixed.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.blog .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.blog .box-container .box {
-    box-shadow: var(--box-shadow);
-}
-
-.blog .box-container .box .image {
-    height: 30rem;
+.container {
     width: 100%;
+    height: 100vh;
+    background: transparent;
+    position: relative;
+    font-family: sans-serif;
+    margin-top: 35px;
+}
+
+.veiw-box {
+    width: 900px;
+    height: 600px;
+    border-radius: 220px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
-.blog .box-container .box .image img {
+#testimonials {
+    display: flex;
+    transition: 0.5s;
+}
+
+.user {
+    width: 800px;
+    text-align: center;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    background: #000000b5;
+    border-radius: 200px;
+    box-shadow: 0 10px 20px -5px #00000061;
+    position: relative;
+}
+
+.space {
+    margin: 0 70px;
+}
+
+.user img {
+    width: 130px;
+    border-radius: 50%;
+    border: 8px solid #ffffffc5;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user p {
+    font-size: 22px;
+    color: #ececec;
+    line-height: 30px;
+    margin: 60px 0 30px;
+    text-align: justify;
+}
+
+.user p .left {
+    font-size: 30px;
+    display: block;
+    text-align: left;
+}
+
+.user p .right {
+    font-size: 30px;
+    /* display: block; */
+    text-align: right;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+
+/* .user p::before {
+    content: '\201C';
+    font-size: 100px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -50;
+    margin-right: 10px;
+} */
+
+
+/* 
+.user p::after {
+    content: '\201D';
+    font-size: 100px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -70;
+    margin-left: 10px;
+} */
+
+.user h3 {
+    font-size: 26px;
+    color: #cbcbcb;
+    padding-bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 8px;
+    font-weight: 400;
+}
+
+.user h4 {
+    color: rgb(206, 206, 206);
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 4rem;
+    font-weight: 300;
+    border-top: whitesmoke solid 1px;
+    width: initial;
+    padding-top: 4px;
+}
+
+.user h4:hover {
+    color: #7c7c7c;
+    font-size: 25px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    border-top: 4px solid #cf0000;
+}
+
+.user .social {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
-.blog .box-container .box:hover .image img {
-    transform: scale(1.2);
+.user .social i {
+    font-size: 1.8em;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    margin: 10px;
+    background: rgba(253, 253, 253, 0.878);
+    border-radius: 50%;
+    z-index: 999;
 }
 
-.blog .box-container .box .content {
-    padding: 3rem 3.5rem;
+
+/* .user .social .twitter .facebook .insta i {
+    align-items: center;
+    display: block;
+    color: white;
+} */
+
+.user .social i:hover {
+    cursor: pointer;
+    transform: translate3d(2px, 10%, 2em);
+    color: white;
+    background: #000000b5;
 }
 
-.blog .box-container .box .content h3 {
-    font-size: 2.2rem;
-    color: var(--black);
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
 }
 
-.blog .box-container .box .content .icons {
-    padding-top: 1.7rem;
+.controls span {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.blog .box-container .box .content .icons a {
-    font-size: 1.4rem;
-    color: #444;
-}
-
-.blog .box-container .box .content .icons a:hover {
-    color: var(--primary-color);
-}
-
-.blog .box-container .box .content .icons a i {
-    color: var(--primary-color);
-    padding-right: .5rem;
-}
-
-.blog .box-container .box .content p {
-    font-size: 1.4rem;
-    color: var(--black);
-    line-height: 2;
-    padding: 1rem 0;
+.active {
+    width: 45px !important;
 }
 
 
