@@ -1,23 +1,23 @@
-let navbar = document.querySelector('.navbar');
+// let navbar = document.querySelector('.navbar');
 
-document.querySelector('#menu').onclick = () => {
-    navbar.classList.toggle('active');
-}
+// document.querySelector('#menu').onclick = () => {
+//     navbar.classList.toggle('active');
+// }
 
-window.onscroll = () => {
-    navbar.classList.remove('active');
-}
+// window.onscroll = () => {
+//     navbar.classList.remove('active');
+// }
 
-$(document).ready(function() {
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll > 350) {
-            $(".header").css("background", "black");
-        } else {
-            $(".header").css("background", "#00000025");
-        }
-    })
-})
+// $(document).ready(function() {
+//     $(window).scroll(function() {
+//         var scroll = $(window).scrollTop();
+//         if (scroll > 350) {
+//             $(".header").css("background", "black");
+//         } else {
+//             $(".header").css("background", "#00000025");
+//         }
+//     })
+// })
 
 
 // var myIndex = 0;
@@ -412,4 +412,90 @@ control3.onclick = function() {
     control1.classList.remove("active");
     control2.classList.remove("active");
     control3.classList.add("active");
+}
+
+// let sidebar = document.querySelector(".sidebar");
+// let closeBtn = document.querySelector("#btn");
+
+// closeBtn.addEventListener("click", () => {
+//     sidebar.classList.toggle("open");
+//     menuBtnChange(); //calling the function(optional)
+// });
+
+// // searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+// //     sidebar.classList.toggle("open");
+// //     menuBtnChange(); //calling the function(optional)
+// // });
+
+// // following are the code to change sidebar button(optional)
+// function menuBtnChange() {
+//     if (sidebar.classList.contains("open")) {
+//         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+//     } else {
+//         closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+//     }
+// }
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        // var scroll = $(window).scrollTop();
+        // var timer = null;
+        // $(".sidebar").css("opacity", 0);
+        // window.addEventListener('scroll', function() {
+        //     if (timer !== null) {
+        //         clearTimeout(timer);
+        //     }
+        //     timer = setTimeout(function() {
+        //         $(".sidebar").css("opacity", 1);
+        //     }, 800);
+        // }, false);
+        // if (scroll > 350) {
+        //     $(".sidebar").css("background", "transparent");
+        // } else {
+        //     $(".sidebar").css("background", "#272727");
+        // }
+        sidebar.classList.remove("open");
+        menuBtnChange(); //calling the function(optional)
+    })
+})
+
+// document.addEventListener("click", (evt) => {
+//     const flyoutEl = document.querySelector(".sidebar");
+//     let targetEl = evt.target; // clicked element      
+//     do {
+//         if (targetEl == flyoutEl) {
+//             // This is a click inside, does nothing, just return.
+//             return;
+//         }
+//         // Go up the DOM
+//         targetEl = targetEl.parentNode;
+//     } while (targetEl);
+//     // This is a click outside.      
+//     $(".sidebar").css("opacity", 0);
+// });
+
+let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+
+closeBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+});
+
+
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+    if (sidebar.classList.contains("open")) {
+        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+    } else {
+        closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+    }
+}
+// document.querySelector('.toggleBar').onclick = () => {
+//     sidebar.classList.toggle('active');
+// }
+
+window.onscroll = () => {
+    sidebar.classList.remove('active');
 }
