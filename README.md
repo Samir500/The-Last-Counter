@@ -39,7 +39,7 @@
 
 ![Screenshot (206)](https://user-images.githubusercontent.com/111998853/222108006-1a2839c1-ea90-4401-aaf7-4dbada256122.png)
 
-![Screenshot (207)](https://user-images.githubusercontent.com/111998853/222108060-534bf2cd-8796-44e9-a0e8-d285d59df8f3.png)
+
 
 
 ### AboutSection
