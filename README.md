@@ -34,19 +34,45 @@
 ## Glimpses
 
 ### HomePage
-![Screenshot (145)](https://user-images.githubusercontent.com/111998853/218280710-3d9cf6a1-b274-4eb9-8191-c2361f7ed0b6.png)
+
+![Screenshot (205)](https://user-images.githubusercontent.com/111998853/222107970-7963dffc-a6a8-4ec3-9129-3e1de358d89e.png)
+
+![Screenshot (206)](https://user-images.githubusercontent.com/111998853/222108006-1a2839c1-ea90-4401-aaf7-4dbada256122.png)
+
+
+
 
 ### AboutSection
-![Screenshot (144)](https://user-images.githubusercontent.com/111998853/218280732-e1b505b8-c20e-499d-87f8-b6625ef2551c.png)
+
+![Screenshot (208)](https://user-images.githubusercontent.com/111998853/222108103-51d6e274-9995-4973-b03c-76d7e535a9f5.png)
+
 
 ### Member Section
-![Screenshot (142)](https://user-images.githubusercontent.com/111998853/218280758-2afc2c33-44b4-485a-afc6-e9d3c173c782.png)
+
+![Screenshot (209)](https://user-images.githubusercontent.com/111998853/222108147-9f67c01d-b965-4a10-b922-68921740843b.png)
+
 
 ### StreamingPlatform
-![Screenshot (140)](https://user-images.githubusercontent.com/111998853/218280780-81a88f61-0af8-4aea-b7b4-e66892b0b9a3.png)
+
+![Screenshot (210)](https://user-images.githubusercontent.com/111998853/222108189-18b9529f-6b01-453c-b644-43b9285826a7.png)
+
 
 ### Gallery
-![Screenshot (148)](https://user-images.githubusercontent.com/111998853/218311835-47d98bfd-9d97-4785-8503-339395114e67.png)
+
+![Screenshot (211)](https://user-images.githubusercontent.com/111998853/222108272-a02c6db6-3647-46fa-987d-f06caeb0ad5f.png)
+
+### Blogs
+
+![Screenshot (212)](https://user-images.githubusercontent.com/111998853/222108693-4ab1760c-1b17-4b68-bdc8-6e63a4fbed60.png)
+
+![Screenshot (213)](https://user-images.githubusercontent.com/111998853/222108731-4d987af9-0b0f-42b2-ba93-6968a9c982ce.png)
+
+
+### Write Us
+
+![Screenshot (214)](https://user-images.githubusercontent.com/111998853/222108898-40c5e48e-b94e-4515-85f0-d4be462fb33c.png)
+
+
 
 
 
