@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LastCounter|Index</title>
+    <link rel="icon" href="./Assets/png/logoLC.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Six+Caps" />
+    <link rel="stylesheet" href="Styles/index.css">
+
+</head>
+
+<body>
+
+    <section class="ff">
+        <div class="leftBox">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 offset-md-2">
+                        <div class="ffLogoHolder" style="background-image: url('./Assets/cclogo.png');">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ffContent">
+                            <p class="ffLabel">Official fan club of The Last Counter</p>
+                            <p class="ffName">Counter Crew</p>
+                            <div class="but">
+                                <a href="./registration.html" target="_self" class="formButton">Join The Crew</a>
+                                <a href="#" target="_self" class="formButton">Crew Preks</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="title">
+            <h1>Live Performances</h1>
+        </div>
+        <section class="timeline-section">
+            <div class="line"></div>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">10.06.2015</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">04.12.2016</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">26.05.2017</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">11.09.2018</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">31.12.2019</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">12.03.2020</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">08.11.2021</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- <script>
+        function qs(selector, all = false) {
+            return all ?
+                document.querySelectorAll(selector) :
+                document.querySelector(selector);
+        }
+
+        const sections = qs(".timeline-section", true);
+        const timeline = qs(".timeline-item");
+        const line = qs(".line");
+        line.style.bottom = calc(100 % -20);
+        let prevScrollY = window.scrollY;
+        let up, down;
+        let full = false;
+        let set = 0;
+        const targetY = window.innerHeight * 0.8;
+
+        function scrollHandler(e) {
+            const {
+                scrollY
+            } = window;
+            up = scrollY < prevScrollY;
+            down = !up;
+            const timelineRect = timeline.getBoundingClientRect();
+            const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
+
+            const dist = targetY - timelineRect.top;
+            console.log(dist);
+
+            if (down && !full) {
+                set = Math.max(set, dist);
+                line.style.bottom = `calc(100% - ${set}px)`;
+            }
+
+            if (dist > timeline.offsetHeight + 50 && !full) {
+                full = true;
+                line.style.bottom = `-50px`;
+            }
+
+            sections.forEach((item) => {
+                // console.log(item);
+                const rect = item.getBoundingClientRect(); //     console.log(rect);
+
+                if (rect.top + item.offsetHeight / 5 < targetY) {
+                    item.classList.add("show-me");
+                }
+            }); // console.log(up, down);
+
+            prevScrollY = window.scrollY;
+        }
+
+        scrollHandler();
+        line.style.display = "block";
+        window.addEventListener("scroll", scrollHandler);
+    </script> -->
+</body>
+
+</html>
