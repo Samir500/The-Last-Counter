@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LastCounter|CrewSignUp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Assets/png/logoLC.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Six+Caps" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Styles/form.css">
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <!-- <div class="logo"><img src="./Assets/png/logoLC.png" alt="logo" class="logoImage"></div> -->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Join The Crew!</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-linkedin' ></i></i></a>
+                </div>
+                <span>OR use your Email for registration</span>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required/>
+                <input type="password" placeholder="Password" required/>
+                <button> <a href="./home.html" target="_self">Sign Up</a></button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-linkedin' ></i></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required/>
+                <div>
+                    <input type="checkbox" checked="checked" name="remember"> <span style="display: inline-flex;">Remember Me</span>
+                </div>
+                <a href="#" style="text-decoration-line: underline;">Forgot your password?</a>
+                <button> <a href="./home.html" target="_self">Sign In</a></button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img id="bichi-panel" src="/Assets/png/logoLC.png" alt="logo">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <img id="bichi-panel" src="/Assets/png/logoLC.png" alt="logo">
+                    <h1>Hello, Crew!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- <footer>
+        <p>
+            Created with <i class="fa fa-heart"></i> by
+            <a target="_blank" href="https://florin-pop.com">Florin Pop</a> - Read how I created this and how you can join the challenge
+            <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+        </p>
+    </footer> -->
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+
+</html>
